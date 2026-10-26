@@ -1,0 +1,13 @@
+# Dependencies
+node_modules/
+
+# OS and Editor artifacts
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.log
+
+# Temporary test screenshots
+current-*.png
+test-*.png

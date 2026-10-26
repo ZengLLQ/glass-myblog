@@ -1,0 +1,32 @@
+{
+  "name": "glass-myblog",
+  "version": "2.0.0",
+  "description": "Interactive WebGL hero for Jaycee 曾令强's personal branding & portfolio, featuring smoked-glass shards, live cut patterns, homography text overlay, and 3D shatter transitions.",
+  "type": "module",
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js",
+    "serve": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZengLLQ/glass-myblog.git"
+  },
+  "keywords": [
+    "threejs",
+    "webgl",
+    "personal-branding",
+    "portfolio",
+    "glassmorphism",
+    "shader",
+    "interaction-design",
+    "creative-coding",
+    "smoked-glass"
+  ],
+  "author": "Jaycee 曾令强",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ZengLLQ/glass-myblog/issues"
+  },
+  "homepage": "https://github.com/ZengLLQ/glass-myblog#readme"
+}

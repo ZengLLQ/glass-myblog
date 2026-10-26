@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jaycee 曾令强 — Personal Branding | Designed in Glass</title>
+  <meta name="description" content="Personal branding and real-time material hero for Jaycee 曾令强 — Freelance Back-end Developer & Penetration Tester.">
+
+  <!-- Inter Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;650;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Three.js 0.169.0 from jsDelivr with import map -->
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.169.0/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.169.0/examples/jsm/"
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <!-- 3D WebGL Canvas Container -->
+  <main id="webgl-container" aria-label="Interactive 3D Glass Hero"></main>
+
+  <!-- Transparent DOM Text Layer with Homography matrix3d mapping -->
+  <div id="dom-panel-overlay" aria-hidden="false"></div>
+
+  <!-- "← Back" Sliver Button (Centred at 0.219 W, 0.238 H) -->
+  <a id="sliver-back-btn" href="#hero" aria-label="Back to glass hero">
+    <span>← Back</span>
+  </a>
+
+  <!-- Secondary Definitions View (Fades in over 0.4s on black) -->
+  <section id="definitions-view" aria-label="Definitions and Story View">
+    <div class="definitions-column">
+      <!-- Sleek pill navigation bar for sections -->
+      <nav class="def-nav-tabs" aria-label="Content sections">
+        <button type="button" class="def-tab-btn active" data-tab="chapters">Story</button>
+        <button type="button" class="def-tab-btn" data-tab="experience">Experience</button>
+        <button type="button" class="def-tab-btn" data-tab="education">Education</button>
+        <button type="button" class="def-tab-btn" data-tab="skills">Disciplines</button>
+        <button type="button" class="def-tab-btn" data-tab="projects">Works</button>
+        <button type="button" class="def-tab-btn" data-tab="facet">Facet Spec</button>
+      </nav>
+
+      <h2 id="def-title">Jaycee's Story, in five chapters.</h2>
+
+      <div id="def-content-container" class="def-paragraphs-wrap">
+        <!-- Rendered dynamically by app.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Static Accessible Fallback (Reduced Motion / No WebGL) -->
+  <div id="static-fallback" role="region" aria-label="Static Portfolio">
+    <header class="static-hero">
+      <p style="text-transform: uppercase; letter-spacing: 0.2em; color: rgba(255,255,255,0.4); font-size: 13px;">Freelance Back-end Developer &amp; Penetration Tester</p>
+      <h1>Jaycee 曾令强.</h1>
+      <p style="font-size: 20px; line-height: 1.6; color: rgba(255,255,255,0.7); max-width: 600px;">
+        Building secure, resilient back-ends — and breaking them first. Still believing a little magic belongs in every line of code.
+      </p>
+      <div style="margin-top: 24px;">
+        <a href="https://wa.me/6282232554674" target="_blank" rel="noopener noreferrer" style="display: inline-block; background: #ffffff; color: #000; padding: 12px 24px; border-radius: 6px; font-weight: 600; text-decoration: none;">Say hello</a>
+      </div>
+    </header>
+
+    <section class="static-section">
+      <h2>About — Five Chapters</h2>
+      <div class="static-item"><strong>Chapter 01 (Once upon a time)</strong> — A Computer Science student setting off to explore AI and ML with a Disney kid spirit.</div>
+      <div class="static-item"><strong>Chapter 02 (The quieter chapters)</strong> — Living with depression, quiet fatigue, and the courage to seek help.</div>
+      <div class="static-item"><strong>Chapter 03 (Room to speak)</strong> — A close friend who made room for what was heavy.</div>
+      <div class="static-item"><strong>Chapter 04 (The message I never sent)</strong> — Deleting a cancellation draft and showing up.</div>
+      <div class="static-item"><strong>Chapter 05 (Still here)</strong> — Grateful for moments of connection alongside imagined worlds.</div>
+    </section>
+
+    <section class="static-section">
+      <h2>Experience</h2>
+      <div class="static-item"><strong>Phantom</strong> — Smart Contract Back-End Engineer (Jun 2026 — Present)</div>
+      <div class="static-item"><strong>MoonPay</strong> — Penetration Tester (Dec 2025 — Present)</div>
+      <div class="static-item"><strong>Web3 Foundation</strong> — Vulnerability Assessor (Mar 2023 — Present)</div>
+      <div class="static-item"><strong>Serotonin</strong> — Smart Contract Back-End Engineer (Aug 2025 — Jan 2026)</div>
+      <div class="static-item"><strong>WalletConnect</strong> — Back-End Golang Engineer (Mar 2024 — Mar 2025)</div>
+      <div class="static-item"><strong>Zurich Insurance</strong> — Front-End Developer (Sep 2022 — May 2023)</div>
+    </section>
+
+    <section class="static-section">
+      <h2>Education</h2>
+      <div class="static-item"><strong>Integrated Institute of Science and Technology Surabaya (ISTTS)</strong> — 2026 — Present (University, Surabaya)</div>
+      <div class="static-item"><strong>Saint Paul Catholic Senior High School</strong> — 2023 — 2026 (Jember)</div>
+      <div class="static-item"><strong>Maria Fatima Catholic Junior High School</strong> — 2020 — 2023 (Jember)</div>
+    </section>
+
+    <section class="static-section">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:veneratesman@gmail.com" style="color: #ffffff;">veneratesman@gmail.com</a></p>
+      <p>WhatsApp: <a href="https://wa.me/6282232554674" style="color: #ffffff;">+62 822-3255-4674</a></p>
+      <p>GitHub: <a href="https://github.com/ZengLLQ" style="color: #ffffff;">github.com/ZengLLQ</a></p>
+    </section>
+  </div>
+
+  <!-- Application Entry Point -->
+  <script type="module" src="src/app.js"></script>
+</body>
+</html>
